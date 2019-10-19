@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Supernatural Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col">
+          <h1>Supernatural Quiz</h1>
+          <div class="question-score">
+            <ul>
+              <li>Current question 1/5</li>
+              <li>Score 0/5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <div>
+        <form id="js-questions" class="question-form">
+          <fieldset>
+            <div class="row question">
+              <div class="col">
+                <legend>Question 1</legend>
+              </div>
+            </div>
+            
+            <div class="row options">
+              <div class="col">
+                <div class="js-options">
+                  <input type="radio">option 1
+                  <div class="js-answer">
+                      <p>That's correct!</p>
+                  </div>
+                  <input type="radio">option 2
+                  <input type="radio">option 3
+                  <input type="radio">option 4
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <button type="submit" id="answer">
+                  Submit
+                </button>
+                <button type="button" id="next-question">
+                  Next >>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="index.html">Start Form</a></li>
+          <li><a href="scoreform.html">Score Form</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="store.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
