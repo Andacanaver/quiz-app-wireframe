@@ -19,3 +19,43 @@ li {
     display: inline-block;
     padding: 0 15px;
 }
+.js-options-one, .js-options-two {
+    display: flex;
+}
+
+[class="1"], [class="3"], [class="0"], [class="2"] {
+    display: flex;
+    flex-basis: 50%;
+    padding: 5px;
+    flex-shrink: 0;
+}
+[class="3"], [class="2"] {
+    flex-direction: row-reverse;
+}
+#option1, #option2 {
+    margin: 5px;
+}
+#option3, #option4 {
+    margin-right: 15px;
+}
+
+.js-question-form {
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 75%;
+}
+fieldset {
+    width: 75%;
+    height: 200px;
+    margin: 0 auto;
+}
+.col {
+    text-align: center;
+}
+.middle-question {
+    margin: 40px auto;
+}
+.question {
+    margin-bottom: 20px;
+}
