@@ -13,8 +13,8 @@ const STORE = {
   options: ['Colt', 'Winchester', 'Remington', 'Glock'],
   answer: 'Colt'},
   {question: "Can angels be killed?",
-  options: ['Yes', 'No', 'Impossible', 'Only by another Angel'],
-  answer: 'Yes'},
+  options: ['Yes, with the right tools', 'No, you can only banish them', 'It\'s impossible to kill them at all', 'Only by another Angel'],
+  answer: 'Yes, with the right tools'},
 ],
   currentQuestion: 0,
   score: 0
