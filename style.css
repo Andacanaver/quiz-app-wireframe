@@ -1,6 +1,6 @@
 body {
-    background-image: url('supernatural-wallpaper.jpg');
-    background: cover; 
+    background-image: url('supernatural-background-1.png');
+    background-size: cover; 
     background-color: black;
     color: white;
 }
@@ -58,4 +58,5 @@ fieldset {
 }
 .question {
     margin-bottom: 20px;
+    
 }

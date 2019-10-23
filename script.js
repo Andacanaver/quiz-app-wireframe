@@ -127,10 +127,10 @@ function handleSelectOption() {
     $('span').removeClass("right-answer wrong-answer");
     if (selectedOption === currentQuest.answer) {
       STORE.score++;
-      $(`${id}`).append(`You got it right<br>`);
+      $(`${id}`).append(`&emsp; You got it right &emsp;<br>`);
       $(`${id}`).addClass("right-answer");
     } else {
-      $(`${id}`).append(`You got it wrong <br> The answer is "${currentQuest.answer}"<br>`);
+      $(`${id}`).append(`&ensp; You got it wrong <br> The answer is "${currentQuest.answer}" &ensp;<br>`);
       $(`${id}`).addClass("wrong-answer");
     }
     
