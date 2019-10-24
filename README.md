@@ -1,0 +1,2 @@
+I am creating this app to test and learn my skills with Javascript and jQuery.
+I had a bit of a challege to try and get the answers seperated and in correct positions while still mantaining the look I wanted.

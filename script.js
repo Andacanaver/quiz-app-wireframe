@@ -20,14 +20,14 @@ function updateOptions() {
     if (index % 2 === 0) {
       $('.js-options-one').append(`
       <div class="${i}">
-      <input type="radio" name="options" id="option${i+1}" value="${question.options[i]}" tabindex="${i+1}">
+      <input type="radio" name="options" id="option${i+1}" value="${question.options[i]}" tabindex="${i+1}" required>
       <label for="option${i+1}">${question.options[i]}</label> <br>
       <span id="js-r${i+1}"></span>
       </div>`)}
     else {
       $('.js-options-two').append(`
       <div class="${i}">
-      <input type="radio" name="options" id="option${i+1}" value="${question.options[i]}" tabindex="${i+1}">
+      <input type="radio" name="options" id="option${i+1}" value="${question.options[i]}" tabindex="${i+1}" required>
       <label for="option${i+1}">${question.options[i]}</label> <br>
       <span id="js-r${i+1}"></span>
       </div>`)};
@@ -118,10 +118,11 @@ function handleSelectOption() {
     event.preventDefault();
     let currentQuest = STORE.questions[STORE.currentQuestion];
     let selectedOption = $("input[name=options]:checked").val();
-    if (!selectedOption) {
+    //changing from alert to required
+    /*if (!selectedOption) {
       alert("Choose an option");
       return;
-    }
+    }*/
     let id_number = currentQuest.options.findIndex(i => i === selectedOption);
     let id = "#js-r" + ++id_number;
     $('span').removeClass("right-answer wrong-answer");

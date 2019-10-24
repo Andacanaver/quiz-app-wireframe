@@ -57,6 +57,8 @@ fieldset {
     margin: 40px auto;
 }
 .question {
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
+}
+input[type="radio"]:hover {
+    cursor: pointer;
 }
